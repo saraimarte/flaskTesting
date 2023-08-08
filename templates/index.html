@@ -8,10 +8,8 @@
 <body>
     <h1>THIS IS THE HOME PAGE TEMPLATE</h1>
     <p>{{content}} THIS WAS FROM FLASK!</p>
-    {% for x in range(10) %}
-      {% if x % 2 == 0 %}
-        <p> {{x}} </p>
-      {% endif %}
+    {% for x in content %}
+        <p>{{x}}</p>
     {% endfor %}
 </body>
 </html>
